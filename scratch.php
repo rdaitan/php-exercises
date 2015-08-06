@@ -62,3 +62,18 @@ echo PUBLISHER;
 */
 $isInteger = is_int(9223372036854775808);
 echo ($isInteger ? "true" : "false");  // output is false.
+?>
+
+<?php
+// expansion
+$pomf="=3";
+echo "$pomf";
+echo '$pomf';
+
+if ("pandering" == "pandering") {
+    echo "true";
+}
+
+if (is_string("yo")) {
+    echo "true";
+}

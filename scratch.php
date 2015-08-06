@@ -52,3 +52,13 @@ $_identifier123;
 // constant
 define('PUBLISHER', "Penguin");
 echo PUBLISHER;
+?>
+
+<?php
+/*  
+    on a 64-bit system the maximum value of an int
+    is +9E18, larger than that of a 32-bit system,
+    which is around 2 billion.
+*/
+$isInteger = is_int(9223372036854775808);
+echo ($isInteger ? "true" : "false");  // output is false.

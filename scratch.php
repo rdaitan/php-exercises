@@ -8,3 +8,25 @@ if(false) {
 
 echo ":)"       // no need for a semicolon before the closing php tag
 ?>
+
+<?php
+    print("it's okay");
+print(
+    "it's okay"
+    );
+?>
+
+<?php
+##############
+#    hash    #
+##############
+
+//////////////
+//  slashes
+//////////////
+
+/*
+multiline
+comment
+*/
+

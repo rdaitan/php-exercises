@@ -46,6 +46,9 @@ $_identifier123;
 
 // invalid
 // $123identifier;
+?>
 
-
-
+<?php
+// constant
+define('PUBLISHER', "Penguin");
+echo PUBLISHER;

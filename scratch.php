@@ -77,3 +77,8 @@ if ("pandering" == "pandering") {
 if (is_string("yo")) {
     echo "true";
 }
+?>
+
+<?php
+echo is_bool(true) ? "true" : "false";
+echo is_bool(0) ? "true" : "false";

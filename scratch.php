@@ -152,3 +152,48 @@ echo '<br/><br/>';
 $say("Say my name.");
 call_user_func('reply', 'Heisenberg');
 
+// variables
+echo '<br/>';
+$count = 6;
+echo "Rotate the wheel $count times.<br/>";
+
+echo is_null($amINull) ? 'true' : 'false';
+echo '<br/>';
+
+$yo = 'YO';
+$$yo = 'heyo';
+echo "$YO<br/>";
+// echoes heyo
+
+$potato = 'PO-TA-TO';
+$patata =& $potato;
+print("$potato<br/>");
+print("$patata<br/>");
+$potato = 'POH-TAY-TOW';
+print("$patata<br/>");
+
+$pomf = '=3';
+function intensify() {
+    // enables access to the global $pomf variable.
+    global $pomf;
+    $pomf .= '3';
+}
+function intensifyx2() {
+    $GLOBALS['pomf'] .= '33';
+}
+echo "$pomf";
+intensify();
+echo "$pomf";
+intensifyx2();
+echo "$pomf";
+echo "<br/>";
+
+function addOneCount() {
+    static $count = 0;
+    $count++;
+    return "$count<br/>";
+}
+
+echo addOneCount();
+echo addOneCount();
+echo addOneCount();

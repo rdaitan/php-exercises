@@ -221,3 +221,13 @@ class Paper {
 $p = (array) (new  Paper);
 var_dump($p);
 echo '<br/>';
+
+
+// assignment operator
+$a = 4;
+$b;
+$c = ($b = $a);
+echo "$a $b $c<br/>";
+
+// execution operator
+echo `ls -R` . '<br/>';

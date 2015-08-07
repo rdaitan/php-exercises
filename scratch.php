@@ -114,3 +114,23 @@ asort($phones);
 
 var_dump($animals);
 var_dump($phones);
+
+
+// objects
+
+class Money {
+    private $value = 0.00;
+    
+    public function set_value($value = 0.00) {
+        $this->value = $value;
+    }
+    
+    public function get_value() {
+        return $this->value;
+    }
+}
+
+$one_hundred = new Money;
+$one_hundred->set_value(100.00);
+echo "{$one_hundred->get_value()}";
+

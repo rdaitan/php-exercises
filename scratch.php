@@ -204,3 +204,20 @@ echo addOneCount();
 echo "9.5 lives" - 1;
 echo "-32 feet" * -2;
 echo "nine 9" * 1;
+echo '<br/>';
+
+
+// casting operator
+
+$a = (int) '5';
+echo is_int($a) ? 'true' : 'false';
+echo '<br/>';
+
+class Paper {
+    public $texture = 'rough';
+    public $color = 'white';
+}
+
+$p = (array) (new  Paper);
+var_dump($p);
+echo '<br/>';

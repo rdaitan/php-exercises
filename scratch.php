@@ -231,3 +231,8 @@ echo "$a $b $c<br/>";
 
 // execution operator
 echo `ls -R` . '<br/>';
+
+// instanceof
+$p = new Paper;
+echo $p instanceof Paper ? 'true' : 'false';
+echo '<br/>';

@@ -134,3 +134,21 @@ $one_hundred = new Money;
 $one_hundred->set_value(100.00);
 echo "{$one_hundred->get_value()}";
 
+
+// callback
+
+$say = function($str) {
+    echo "{$str}<br/>";
+};  // don't forget the semicolon!
+
+function reply($str) {
+    echo "{$str}.";
+    if ("$str" == 'Heisenberg')
+        echo '<br/>You are goddamn right.<br/>';
+    else
+        echo '<br/>*BANG*<br/>';
+}
+echo '<br/><br/>';
+$say("Say my name.");
+call_user_func('reply', 'Heisenberg');
+

@@ -236,3 +236,62 @@ echo `ls -R` . '<br/>';
 $p = new Paper;
 echo $p instanceof Paper ? 'true' : 'false';
 echo '<br/>';
+
+// if
+if($a > 3) {
+    echo '$a is greater than 3.';
+    echo '<br/>';
+}
+elseif ($a == 30) {
+    echo '$a is equal to 3.';
+    echo '<br/>';
+}
+else {
+    echo '$a is less than 3.';
+    echo '<br/>';
+}
+/* another way to write an if statement */
+if($a > 3):
+    echo '$a is greater than 3.';
+    echo '<br/>';
+elseif ($a == 30):
+    echo '$a is equal to 3.';
+    echo '<br/>';
+else:
+    echo '$a is less than 3.';
+    echo '<br/>';
+endif;
+
+// switch
+$a = 1;
+switch($a) {
+    case 3:
+        echo '3<br/>';
+        break;
+    case 2: // fall-through
+        echo '2';
+        echo '<br/> or';
+    case 1:
+        echo '1<br/>';
+        break;
+    default:
+        echo 'none';
+        echo '<br/>';
+}
+/* another way to write a switch */
+switch($a):
+case 3:
+    echo '3<br/>';
+    break;
+case 2: // fall-through
+    echo '2';
+    echo '<br/> or';
+case 1:
+    echo '1<br/>';
+    break;
+default:
+    echo 'none';
+    echo '<br/>';
+endswitch;
+
+        

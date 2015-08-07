@@ -197,3 +197,10 @@ function addOneCount() {
 echo addOneCount();
 echo addOneCount();
 echo addOneCount();
+
+
+// casting
+
+echo "9.5 lives" - 1;
+echo "-32 feet" * -2;
+echo "nine 9" * 1;

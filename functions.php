@@ -45,3 +45,14 @@ function hey() {
 }
 
 hey();
+
+// static
+
+function heyo() {
+    static $str = 'hey';
+    $str .= 'o';
+    echo "<br/>$str";
+}
+
+for ($i = 0; $i < 4; $i++)
+    heyo();

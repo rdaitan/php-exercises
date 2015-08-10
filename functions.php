@@ -28,10 +28,20 @@ function before($str_b4) {
 //after("HEYO");
 //before("FOO");
 
-before("YO");
-echo "  STOP!  ";
-after("SUP");
-
-after("OH");
-before("MY");
+//before("YO");
+//echo "  STOP!  ";
+//after("SUP");
+//
+//after("OH");
+//before("MY");
         
+// global variable
+
+$yo = 'yo';
+
+function hey() {
+    global $yo;
+    echo $yo . '!';
+}
+
+hey();

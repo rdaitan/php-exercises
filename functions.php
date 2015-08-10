@@ -74,3 +74,12 @@ echo "<br/>$a";
 doubler($a);
 echo "<br/>$a";
 
+// variable parameters
+
+function print_all() {
+    $params = func_get_args();
+    foreach($params as $param)
+        echo "<br/>$param";
+}
+
+print_all('a', 'e', 'i', 'o', 'u');

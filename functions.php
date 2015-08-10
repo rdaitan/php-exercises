@@ -83,3 +83,17 @@ function print_all() {
 }
 
 print_all('a', 'e', 'i', 'o', 'u');
+
+// return by reference
+
+$names = array('a man', 'b man', 'c man');
+
+function &getNames() {
+    global $names;
+    return $names;
+}
+
+$names_ref =& getNames();
+$names_ref[0] = 'p-man';
+echo "<br/>$names[0]";
+

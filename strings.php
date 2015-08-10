@@ -10,6 +10,13 @@ EOF;
 
 echo "<p>$str1</p>";
 
+// echo example
+echo '<p>';
+echo 'heyo', 'yo';
+echo '</p>';
+
+//echo ('yo', 'heyo');
+
 ?>
 </body>
 </html>

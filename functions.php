@@ -102,3 +102,21 @@ echo "<br/>$names[0]";
 $func = 'print_all';
 $func('yo', 'momma', 'so', 'fat');
 
+//  anonymous function
+$array = array("really long string here, boy", "this", "middling length", "larger");
+
+usort($array, function($a, $b) {
+    return strlen($a) - strlen($b);
+});
+
+print_r($array);
+
+$sortOption = 'desc';
+usort($array, function($a, $b) use ($sortOption) {
+    if ($sortOption == 'desc')
+        return strlen($b) - strlen($a);
+    else
+        return strlen($a) - strlen($b);
+});
+
+print_r($array);

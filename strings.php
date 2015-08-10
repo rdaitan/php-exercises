@@ -17,6 +17,11 @@ echo '</p>';
 
 //echo ('yo', 'heyo');
 
+
+// printf()
+$str_format = "%'&+8.2d";
+printf($str_format, 1984);
+
 ?>
 </body>
 </html>

@@ -29,6 +29,13 @@ for($i = 1; $i <= 26; $i = $i << 1)
     printf("%s ", $alphabet{$i - 1});
     
 
+// trim
+$str2 = "\n\t\t***DON'T LOSE YOUR WAAAAY***\t\t\n";
+print('<br/>');
+print(trim($str2) . '<br/>');
+print(ltrim($str2, "\n") . '<br/>');
+print(rtrim($str2, "\n\t*") . '<br/>');
+
 ?>
 </body>
 </html>

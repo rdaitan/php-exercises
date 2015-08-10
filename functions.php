@@ -56,3 +56,21 @@ function heyo() {
 
 for ($i = 0; $i < 4; $i++)
     heyo();
+
+
+// pass-by-reference
+
+function doubler(&$value) {
+    $value = $value << 1;
+}
+
+$a = 3;
+doubler($a);
+echo "<br/>$a";
+doubler($a);
+echo "<br/>$a";
+doubler($a);
+echo "<br/>$a";
+doubler($a);
+echo "<br/>$a";
+

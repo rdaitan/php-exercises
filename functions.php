@@ -97,3 +97,8 @@ $names_ref =& getNames();
 $names_ref[0] = 'p-man';
 echo "<br/>$names[0]";
 
+// variable function
+
+$func = 'print_all';
+$func('yo', 'momma', 'so', 'fat');
+

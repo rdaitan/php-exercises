@@ -79,7 +79,16 @@ while($token !== false) {
     $token = strtok(', ');
 }
 
+// sscanf()
+$info = 'Daitan, R Bonifacio - 21';
+var_dump(sscanf($info, "%[^','], %s %s - %d")); print('<br/>');
+// %[^','] would accept any character except ','. using %s would 
+// accept any string even if it includes a comma. because of this,
+// parsing other tokens would fail.
+// https://support.microsoft.com/en-us/kb/38335
 
+sscanf($info, "%[^','], %s %s - %d", $lastname, $firstname, $middlename, $age);
+printf("His name is %s %s %s. He is %d years old.<br/>", $firstname, $middlename, $lastname, $age);
     
 ?>
 </body>

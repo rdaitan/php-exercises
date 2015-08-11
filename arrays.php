@@ -65,3 +65,12 @@ var_dump($sortme);
 var_dump($fruitColor); print('<br/>');
 shuffle($fruitColor);
 var_dump($fruitColor);
+
+// array_filter
+$nums = range(0, 20);
+$evens = array_filter($nums, function ($element) {
+    return $element % 2 == 0;
+});
+print('<br/>');
+var_dump($evens);
+

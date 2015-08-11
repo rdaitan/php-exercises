@@ -70,9 +70,17 @@ print('<br/>');
 // implode()
 $animals = array('cat', 'dog', 'turtle', 'rabbit');
 var_dump(implode(' | ', $animals));
+print('<br/>');
+
+// strtok()
+$token = strtok($str5, ', ');
+while($token !== false) {
+    print("{$token}<br/>");
+    $token = strtok(', ');
+}
 
 
-
+    
 ?>
 </body>
 </html>

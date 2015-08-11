@@ -61,3 +61,7 @@ $sortme = array('aab5', 'Aab5', 'aAb12', 'bbc12', 'aab1');
 natcasesort($sortme);
 var_dump($sortme);
 
+// shuffle
+var_dump($fruitColor); print('<br/>');
+shuffle($fruitColor);
+var_dump($fruitColor);

@@ -40,6 +40,20 @@ print(rtrim($str2, "\n\t*") . '<br/>');
 $str3 = 'Butter Coconut';
 print(addcslashes($str3, 'u'));
 print(stripcslashes($str3));
+print('<br/>');
+
+// soundex & metaphone
+$known = 'Fred';
+$query = 'Phred';
+
+$soundex_known = soundex($known);
+$soundex_query = soundex($query);
+
+$metaphone_known = metaphone($known);
+$metaphone_query = metaphone($query);
+
+print("$soundex_known $soundex_query<br/>"); 
+print("$metaphone_known $metaphone_query<br/>");
 
 ?>
 </body>

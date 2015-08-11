@@ -42,4 +42,12 @@ $pomfer = function($value, $key, $str) {    // first arg is value, next is key, 
 };
 array_walk($pomf, $pomfer, '=3');
 
+// array_reduce()
+
+$vals = range(1, 100);
+$total = array_reduce($vals, function ($runningTotal, $currentValue) {
+    $runningTotal += $currentValue;
+    return $runningTotal;
+});
+print("$total<br/>");
 

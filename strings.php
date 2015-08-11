@@ -90,6 +90,17 @@ var_dump(sscanf($info, "%[^','], %s %s - %d")); print('<br/>');
 sscanf($info, "%[^','], %s %s - %d", $lastname, $firstname, $middlename, $age);
 printf("His name is %s %s %s. He is %d years old.<br/>", $firstname, $middlename, $lastname, $age);
     
+// parse_url()
+var_dump(parse_url('http://www.google.com/maps/'));
+/* output
+array(3) { 
+    ["scheme"]=> string(4) "http" 
+    ["host"]=> string(14) "www.google.com" 
+    ["path"]=> string(6) "/maps/" 
+} 
+*/
+
+
 ?>
 </body>
 </html>

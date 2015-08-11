@@ -65,6 +65,12 @@ $str5 = 'donut, chocolate, pancake, cupcake, pretzel';
 var_dump(explode(', ', $str5)); print('<br/>');
 var_dump(explode(', ', $str5, 3)); // get only the first two,
                                   // and the rest of the string
+print('<br/>');
+
+// implode()
+$animals = array('cat', 'dog', 'turtle', 'rabbit');
+var_dump(implode(' | ', $animals));
+
 
 
 ?>

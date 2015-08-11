@@ -59,6 +59,14 @@ print("$metaphone_known $metaphone_query<br/>");
 $str4 = 'Rise and shine, Mr. Freeman';
 $str4 = substr_replace($str4, 's-shine', 9, 5);
 print("$str4<br/>");
+
+// explode()
+$str5 = 'donut, chocolate, pancake, cupcake, pretzel';
+var_dump(explode(', ', $str5)); print('<br/>');
+var_dump(explode(', ', $str5, 3)); // get only the first two,
+                                  // and the rest of the string
+
+
 ?>
 </body>
 </html>

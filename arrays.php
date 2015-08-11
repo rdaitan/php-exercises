@@ -51,3 +51,13 @@ $total = array_reduce($vals, function ($runningTotal, $currentValue) {
 });
 print("$total<br/>");
 
+
+// natural sort
+$sortme = array('abc10', 'aab5', 'aab12', 'bbc12', 'aab1');
+natsort($sortme);
+var_dump($sortme);
+print('<br/>');
+$sortme = array('aab5', 'Aab5', 'aAb12', 'bbc12', 'aab1');
+natcasesort($sortme);
+var_dump($sortme);
+

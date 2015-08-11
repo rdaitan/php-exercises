@@ -15,3 +15,9 @@ var_dump($arr);
 $names = range('aaron', 'zee');
 print('<br/>');
 var_dump($names);
+
+print('<br/>');
+
+// list()
+list($str1, $str2) = array('ayy', 'lmao');
+print("{$str1} {$str2}<br/>");

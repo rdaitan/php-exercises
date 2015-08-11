@@ -21,3 +21,16 @@ print('<br/>');
 // list()
 list($str1, $str2) = array('ayy', 'lmao');
 print("{$str1} {$str2}<br/>");
+
+// extract()
+$fruitColor = array(
+    'apple' => 'red',
+    'mango' => 'yellow',
+    'banana' => 'yellow',
+    'guava' => 'green'
+    );
+
+extract($fruitColor);
+print("$apple, $mango, $banana, $guava <br/>"); 
+extract($fruitColor, EXTR_PREFIX_ALL, 'fruit');
+print("$fruit_apple, $fruit_mango, $fruit_banana, $fruit_guava <br/>");

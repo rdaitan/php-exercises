@@ -55,6 +55,10 @@ $metaphone_query = metaphone($query);
 print("$soundex_known $soundex_query<br/>"); 
 print("$metaphone_known $metaphone_query<br/>");
 
+// substr_replace()
+$str4 = 'Rise and shine, Mr. Freeman';
+$str4 = substr_replace($str4, 's-shine', 9, 5);
+print("$str4<br/>");
 ?>
 </body>
 </html>

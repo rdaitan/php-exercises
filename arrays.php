@@ -7,3 +7,6 @@ print("2 {$arr["snake"]}");
 //$arr2 = ['y' => 'yes', 'n' => 'no', 'm' => 'maybe'];
 //var_dump($arr2);
 
+// adding values to the end
+$arr[] = 'punpun';
+var_dump($arr);

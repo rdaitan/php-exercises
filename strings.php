@@ -36,6 +36,11 @@ print(trim($str2) . '<br/>');
 print(ltrim($str2, "\n") . '<br/>');
 print(rtrim($str2, "\n\t*") . '<br/>');
 
+// addcsslashes() and stripcslashes()
+$str3 = 'Butter Coconut';
+print(addcslashes($str3, 'u'));
+print(stripcslashes($str3));
+
 ?>
 </body>
 </html>

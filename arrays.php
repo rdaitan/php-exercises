@@ -10,3 +10,8 @@ print("2 {$arr["snake"]}");
 // adding values to the end
 $arr[] = 'punpun';
 var_dump($arr);
+
+// range()
+$names = range('aaron', 'zee');
+print('<br/>');
+var_dump($names);

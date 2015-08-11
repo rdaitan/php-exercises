@@ -34,3 +34,12 @@ extract($fruitColor);
 print("$apple, $mango, $banana, $guava <br/>"); 
 extract($fruitColor, EXTR_PREFIX_ALL, 'fruit');
 print("$fruit_apple, $fruit_mango, $fruit_banana, $fruit_guava <br/>");
+
+// array_walk()
+$pomf = array('pomf', 'pomf', 'pomf');
+$pomfer = function($value, $key, $str) {    // first arg is value, next is key, third is extra data
+    print("{$key} {$value}{$str}<br/>");
+};
+array_walk($pomf, $pomfer, '=3');
+
+

@@ -4,6 +4,13 @@ class Coffee {
     public $brand;
     public $net_wt;
     
+    public function __construct($brand, $name, $net_wt) {
+        $this->brand = $brand;
+        $this->name = $name;
+        $this->net_wt = $net_wt;
+    }
+        
+    
     public function getFullName() {
         return $this->upperCaseBrand() . " {$this->name}";
     }

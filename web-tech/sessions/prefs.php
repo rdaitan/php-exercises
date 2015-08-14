@@ -18,8 +18,8 @@ $colors = array(
 $background = array_key_exists('background', $_POST) ? $_POST['background'] : null;
 $foreground = array_key_exists('foreground', $_POST) ? $_POST['foreground'] : null;
 
-setcookie('background', $colors[$background]);
-setcookie('foreground', $colors[$foreground]);
+$_SESSION['background'] = $background;
+$_SESSION['foreground'] = $foreground;
 ?>
 
     <p>Thank you. Your preferences have been changed to:</p>

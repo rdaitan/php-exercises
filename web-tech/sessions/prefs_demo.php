@@ -5,8 +5,10 @@
     <title>Front Door</title>
 </head>
 <?php
-$background = array_key_exists('background', $_COOKIE) ? $_COOKIE['background'] : null;
-$foreground = array_key_exists('foreground', $_COOKIE) ? $_COOKIE['foreground'] : null;
+session_start();
+
+$background = array_key_exists('background', $_SESSION) ? $_SESSION['background'] : null;
+$foreground = array_key_exists('foreground', $_SESSION) ? $_SESSION['foreground'] : null;
 ?>
 <body bgcolor="<?php echo $background; ?>" text="<?php echo $foreground; ?>">
     <p>

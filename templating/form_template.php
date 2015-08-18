@@ -4,9 +4,9 @@ require_once 'func_template.php';
 $bindings = array();
 $template = '';
 
-if (array_key_exists('NAME', $_GET)) {
+if (array_key_exists('name', $_GET)) {
   $template = 'thankyou.template';
-  $bindings['NAME'] = $_GET['NAME'];
+  $bindings['NAME'] = $_GET['name'];
 }
 else {
   $template = 'user.template';

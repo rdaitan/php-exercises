@@ -10,7 +10,7 @@
     <table>
       <tr>
         <td>Name:</td>
-        <td><input type="text" name id=""></td>
+        <td><input type="text" name='name'></td>
       </tr>
     </table>
   </form>

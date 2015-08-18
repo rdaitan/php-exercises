@@ -1,4 +1,6 @@
 <?php
+require_once 'func_template.php';
+
 $bindings = array();
 $template = '';
 

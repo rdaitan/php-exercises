@@ -1,7 +1,7 @@
 <?php
 function fillTemplate($template, $bindings = array(), $unhandled = 'delete') {
   // open and read the contents of the template.
-  $template         = $_SERVER['DOCUMENT_ROOT'] . '/template/' . $template;
+  $template         = $_SERVER['DOCUMENT_ROOT'] . '/php-exercises/templating/templates/' . $template;
   $templateFile     = fopen($template, 'r');
   $templateContent  = '';
   if($templateFile) {
@@ -24,5 +24,5 @@ function fillTemplate($template, $bindings = array(), $unhandled = 'delete') {
     $template = preg_replace('/{[^}]*}/i', '<!--undefined-->', $templateContent);
   }
 
-  return $templateContents;
+  return $templateContent;
 }
